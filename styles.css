@@ -13,7 +13,11 @@ h1 {
 
 body {
     background-image: url(images.png);
-    object-fit: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .list-box {
@@ -26,10 +30,9 @@ body {
     );
     display: flex;
     flex-direction: column;
+    justify-content: center;
     color: #f0f8ff;
-    margin-top: 50px;
-    margin-left: 400px;
-    margin-right: 400px;
+    width: 50%;
 }
 
 .pokemon-info {
@@ -55,4 +58,5 @@ button:hover {
     background-color: rgb(179, 0, 0);
     color: #d8bfd8;
     padding: 9px;
+    cursor: pointer;
 }
