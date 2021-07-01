@@ -76,3 +76,17 @@ button:hover {
     padding: 9px;
     cursor: pointer;
 }
+
+ @media screen {
+     .list-box{
+         width: 300px;
+         padding: 30px;
+     }
+     .pokemon-info{
+         width: 240px;
+         height: 350px;
+     }
+     .pokemon-details{
+         margin-top: 10px;
+     }
+ }
