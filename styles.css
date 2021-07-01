@@ -5,7 +5,7 @@
 }
 
 h1 {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
     justify-content: center;
     margin-top: 15px;
@@ -13,7 +13,6 @@ h1 {
 
 body {
     background-image: url(images.png);
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,16 +20,17 @@ body {
 }
 
 .list-box {
-    border: 2px solid #000;
-    border-radius: 30px;
+    border: 3px solid #000;
     background: linear-gradient(
-        45deg,
-        #e27500 0%,
-        #3844e8 100%
+        to right,
+        #e4994a 0%,
+        #8f8faa 100%
     );
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 50px;
+    margin-top: 20px;
     color: #f0f8ff;
     width: 50%;
 }
@@ -38,6 +38,19 @@ body {
 .pokemon-info {
 background-color: #000000;
 border-radius: 25px;
+display: flex;
+flex-direction: row;
+}
+
+.pokemon-details {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span {
+    color: #ff1a1a;
+    font-weight: bold;
 }
 
 .pokemon-list-container {
@@ -54,8 +67,11 @@ button {
 }
 
 button:hover {
+    transition: ease-in-out 0.25s;
     border: 3px solid #fff5ee;
     background-color: rgb(179, 0, 0);
+    font-weight: bold;
+    font-style: italic;
     color: #d8bfd8;
     padding: 9px;
     cursor: pointer;
